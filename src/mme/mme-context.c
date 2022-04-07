@@ -2890,7 +2890,7 @@ mme_bearer_t *mme_bearer_find_by_ue_ebi(mme_ue_t *mme_ue, uint8_t ebi)
 }
 
 mme_bearer_t *mme_bearer_find_or_add_by_message(
-        mme_ue_t *mme_ue, ogs_nas_eps_message_t *message, bool esm_piggybacked)
+        mme_ue_t *mme_ue, ogs_nas_eps_message_t *message, int create_action)
 {
     uint8_t pti = OGS_NAS_PROCEDURE_TRANSACTION_IDENTITY_UNASSIGNED;
     uint8_t ebi = OGS_NAS_EPS_BEARER_IDENTITY_UNASSIGNED;
@@ -3001,12 +3001,12 @@ mme_bearer_t *mme_bearer_find_or_add_by_message(
             OGS_NAS_EPS_PDN_CONNECTIVITY_REQUEST_ACCESS_POINT_NAME_PRESENT) {
             sess = mme_sess_find_by_apn(mme_ue,
                     pdn_connectivity_request->access_point_name.apn);
-            if (sess && esm_piggybacked == false) {
+            if (sess && create_action != OGS_GTP_CREATE_IN_ATTACH_REQUEST) {
                 ogs_assert(OGS_OK ==
                     nas_eps_send_pdn_connectivity_reject(
                         sess,
                         ESM_CAUSE_MULTIPLE_PDN_CONNECTIONS_FOR_A_GIVEN_APN_NOT_ALLOWED,
-                        esm_piggybacked));
+                        create_action));
                 ogs_warn("APN duplicated [%s]",
                     pdn_connectivity_request->access_point_name.apn);
                 return NULL;
