@@ -35,6 +35,7 @@ example_conf = '''
     vonr.yaml
     slice.yaml
     srslte.yaml
+    handover.yaml
     non3gpp.yaml
 '''.split()
 
