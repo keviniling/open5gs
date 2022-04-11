@@ -2142,11 +2142,10 @@ mme_ue_t *mme_ue_add(enb_ue_t *enb_ue)
         mme_self()->sgw = ogs_list_last(&mme_self()->sgw_list);
 
     /* setup GTP path with selected SGW */
-    mme_self()->sgw = selected_sgw_node(mme_self()->sgw, enb_ue);
-    ogs_assert(mme_self()->sgw);
-    OGS_SETUP_GTP_NODE(mme_ue, mme_self()->sgw);
-    ogs_debug("UE using SGW on IP[%s]",
-                OGS_ADDR(mme_self()->sgw->gnode.sa_list, buf));
+    mme_ue->sgw = mme_self()->sgw = selected_sgw_node(mme_self()->sgw, enb_ue);
+    ogs_assert(mme_ue->sgw);
+    ogs_assert(mme_ue->gnode);
+    ogs_debug("UE using SGW on IP[%s]", OGS_ADDR(mme_ue->gnode->sa_list, buf));
 
     /* Clear VLR */
     mme_ue->csmap = NULL;

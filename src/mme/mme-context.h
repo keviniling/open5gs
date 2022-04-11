@@ -149,6 +149,17 @@ typedef struct mme_context_s {
 typedef struct mme_sgw_s {
     ogs_gtp_node_t  gnode;
 
+    uint32_t        mme_s11_teid;   /* MME-S11-TEID is derived from INDEX */
+    uint32_t        sgw_s11_teid;   /* SGW-S11-TEID is received from SGW */
+
+    /*
+     * If the MME sends Delete-Session-Request to the SGW for all sessions,
+     *    session_context_will_deleted = 1
+     * When the MME receives a Delete-Session-Response for the last session,
+     *    session_context_will_deleted = 0
+     */
+    int             session_context_will_deleted;
+
     uint16_t        tac[OGS_MAX_NUM_OF_TAI];
     uint8_t         num_of_tac;
     uint32_t        e_cell_id[OGS_MAX_NUM_OF_CELL_ID];
@@ -515,7 +526,10 @@ struct mme_ue_s {
      */
     int             session_context_will_deleted;
 
-    void            *gnode;
+    union {
+        mme_sgw_t       *sgw;
+        ogs_gtp_node_t  *gnode;
+    };
     mme_csmap_t     *csmap;
 };
 
