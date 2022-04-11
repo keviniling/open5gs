@@ -1603,8 +1603,7 @@ mme_pgw_t *mme_pgw_add(ogs_sockaddr_t *addr)
     ogs_assert(pgw);
     memset(pgw, 0, sizeof *pgw);
 
-    pgw->gnode = ogs_gtp_node_new(addr);
-    ogs_assert(pgw->gnode);
+    pgw->sa_list = addr;
 
     ogs_list_add(&self.pgw_list, pgw);
 
@@ -1617,7 +1616,7 @@ void mme_pgw_remove(mme_pgw_t *pgw)
 
     ogs_list_remove(&self.pgw_list, pgw);
 
-    ogs_gtp_node_free(pgw->gnode);
+    ogs_freeaddrinfo(pgw->sa_list);
     ogs_pool_free(&mme_pgw_pool, pgw);
 }
 
@@ -1636,8 +1635,8 @@ ogs_sockaddr_t *mme_pgw_addr_find_by_apn(
     ogs_assert(list);
 
     ogs_list_for_each(list, pgw) {
-        ogs_assert(pgw->gnode);
-        ogs_sockaddr_t *addr = pgw->gnode->sa_list;
+        ogs_assert(pgw->sa_list);
+        ogs_sockaddr_t *addr = pgw->sa_list;
 
         while (addr) {
             if (addr->ogs_sa_family == family &&

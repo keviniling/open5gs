@@ -160,7 +160,7 @@ typedef struct mme_sgw_s {
 typedef struct mme_pgw_s {
     ogs_lnode_t     lnode;
 
-    ogs_gtp_node_t  *gnode;
+    ogs_sockaddr_t  *sa_list;
     const char      *apn;
 } mme_pgw_t;
 
