@@ -88,13 +88,13 @@ typedef struct sgwc_sess_s {
      * it is used to check if all sessions are deactivated.
      */
     struct {
-        bool            release_access_bearers;
-        bool            create_indirect_tunnel;
-        bool            delete_indirect_tunnel;
+        bool        release_access_bearers;
+        bool        create_indirect_tunnel;
+        bool        delete_indirect_tunnel;
     } state;
 
     /* APN Configuration */
-    ogs_session_t session;
+    ogs_session_t   session;
 
     ogs_list_t      bearer_list;
 

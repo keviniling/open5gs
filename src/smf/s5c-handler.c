@@ -75,7 +75,7 @@ void smf_s5c_handle_create_session_request(
 
     if (req->imsi.presence == 0) {
         ogs_error("No IMSI");
-        cause_value = OGS_GTP_CAUSE_MANDATORY_IE_MISSING;
+        cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
     }
     if (req->sender_f_teid_for_control_plane.presence == 0) {
         ogs_error("No TEID");
@@ -95,20 +95,20 @@ void smf_s5c_handle_create_session_request(
     }
     if (req->pdn_address_allocation.presence == 0) {
         ogs_error("No PAA");
-        cause_value = OGS_GTP_CAUSE_MANDATORY_IE_MISSING;
+        cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
     }
     if (req->serving_network.presence == 0) {
         ogs_error("No Serving Network");
-        cause_value = OGS_GTP_CAUSE_MANDATORY_IE_MISSING;
+        cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
     }
     if (req->serving_network.data == NULL) {
         ogs_error("No Data in Serving Network");
-        cause_value = OGS_GTP_CAUSE_MANDATORY_IE_MISSING;
+        cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
     }
     if (req->serving_network.len != OGS_PLMN_ID_LEN) {
         ogs_error("Invalid Len[%d] in Serving Network",
                 req->serving_network.len);
-        cause_value = OGS_GTP_CAUSE_MANDATORY_IE_MISSING;
+        cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
     }
 
     if (!sess) {
