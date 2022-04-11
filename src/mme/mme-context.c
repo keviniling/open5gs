@@ -1552,8 +1552,10 @@ mme_sgw_t *mme_sgw_add(ogs_sockaddr_t *addr)
     ogs_assert(sgw);
     memset(sgw, 0, sizeof *sgw);
 
-    sgw->gnode = ogs_gtp_node_new(addr);
-    ogs_assert(sgw->gnode);
+    sgw->gnode.sa_list = addr;
+
+    ogs_list_init(&sgw->gnode.local_list);
+    ogs_list_init(&sgw->gnode.remote_list);
 
     ogs_list_add(&self.sgw_list, sgw);
 
@@ -1566,7 +1568,9 @@ void mme_sgw_remove(mme_sgw_t *sgw)
 
     ogs_list_remove(&self.sgw_list, sgw);
 
-    ogs_gtp_node_free(sgw->gnode);
+    ogs_gtp_xact_delete_all(&sgw->gnode);
+    ogs_freeaddrinfo(sgw->gnode.sa_list);
+
     ogs_pool_free(&mme_sgw_pool, sgw);
 }
 
@@ -1585,8 +1589,7 @@ mme_sgw_t *mme_sgw_find_by_addr(ogs_sockaddr_t *addr)
     ogs_assert(addr);
 
     ogs_list_for_each(&self.sgw_list, sgw) {
-        ogs_assert(sgw->gnode);
-        if (ogs_sockaddr_is_equal(&sgw->gnode->addr, addr) == true)
+        if (ogs_sockaddr_is_equal(&sgw->gnode.addr, addr) == true)
             break;
     }
 
@@ -2141,8 +2144,9 @@ mme_ue_t *mme_ue_add(enb_ue_t *enb_ue)
     /* setup GTP path with selected SGW */
     mme_self()->sgw = selected_sgw_node(mme_self()->sgw, enb_ue);
     ogs_assert(mme_self()->sgw);
-    OGS_SETUP_GTP_NODE(mme_ue, mme_self()->sgw->gnode);
-    ogs_debug("UE using SGW on IP[%s]", OGS_ADDR(&mme_ue->gnode->addr, buf));
+    OGS_SETUP_GTP_NODE(mme_ue, mme_self()->sgw);
+    ogs_debug("UE using SGW on IP[%s]",
+                OGS_ADDR(mme_self()->sgw->gnode.sa_list, buf));
 
     /* Clear VLR */
     mme_ue->csmap = NULL;

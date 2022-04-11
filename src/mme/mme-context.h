@@ -147,14 +147,12 @@ typedef struct mme_context_s {
 } mme_context_t;
 
 typedef struct mme_sgw_s {
-    ogs_lnode_t     lnode;
+    ogs_gtp_node_t  gnode;
 
     uint16_t        tac[OGS_MAX_NUM_OF_TAI];
     uint8_t         num_of_tac;
     uint32_t        e_cell_id[OGS_MAX_NUM_OF_CELL_ID];
     uint8_t         num_of_e_cell_id;
-
-    ogs_gtp_node_t  *gnode;
 } mme_sgw_t;
 
 typedef struct mme_pgw_s {
@@ -517,7 +515,7 @@ struct mme_ue_s {
      */
     int             session_context_will_deleted;
 
-    ogs_gtp_node_t  *gnode;
+    void            *gnode;
     mme_csmap_t     *csmap;
 };
 
