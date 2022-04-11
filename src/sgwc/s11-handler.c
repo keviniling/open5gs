@@ -167,14 +167,6 @@ void sgwc_s11_handle_create_session_request(
         ogs_error("No PGW IP");
         cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
     }
-    if (req->user_location_information.presence == 0) {
-        ogs_error("No User Location Inforamtion");
-        cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
-    }
-    if (req->pdn_type.presence == 0) {
-        ogs_error("No PDN Type");
-        cause_value = OGS_GTP_CAUSE_CONDITIONAL_IE_MISSING;
-    }
 
     if (!sgwc_ue) {
         ogs_warn("No Context");
@@ -203,19 +195,24 @@ void sgwc_s11_handle_create_session_request(
     ogs_assert(sess);
 
     /* Set User Location Information */
-    decoded = ogs_gtp_parse_uli(&uli, &req->user_location_information);
-    ogs_assert(req->user_location_information.len == decoded);
-    ogs_nas_to_plmn_id(&sgwc_ue->e_tai.plmn_id, &uli.tai.nas_plmn_id);
-    sgwc_ue->e_tai.tac = uli.tai.tac;
-    ogs_nas_to_plmn_id(&sgwc_ue->e_cgi.plmn_id, &uli.e_cgi.nas_plmn_id);
-    sgwc_ue->e_cgi.cell_id = uli.e_cgi.cell_id;
+    if (req->user_location_information.presence == 1) {
+        decoded = ogs_gtp_parse_uli(&uli, &req->user_location_information);
+        ogs_assert(req->user_location_information.len == decoded);
 
-    ogs_debug("    TAI[PLMN_ID:%06x,TAC:%d]",
-            ogs_plmn_id_hexdump(&sgwc_ue->e_tai.plmn_id),
-            sgwc_ue->e_tai.tac);
-    ogs_debug("    E_CGI[PLMN_ID:%06x,CELL_ID:0x%x]",
-            ogs_plmn_id_hexdump(&sgwc_ue->e_cgi.plmn_id),
-            sgwc_ue->e_cgi.cell_id);
+        sgwc_ue->uli_presence = true;
+
+        ogs_nas_to_plmn_id(&sgwc_ue->e_tai.plmn_id, &uli.tai.nas_plmn_id);
+        sgwc_ue->e_tai.tac = uli.tai.tac;
+        ogs_nas_to_plmn_id(&sgwc_ue->e_cgi.plmn_id, &uli.e_cgi.nas_plmn_id);
+        sgwc_ue->e_cgi.cell_id = uli.e_cgi.cell_id;
+
+        ogs_debug("    TAI[PLMN_ID:%06x,TAC:%d]",
+                ogs_plmn_id_hexdump(&sgwc_ue->e_tai.plmn_id),
+                sgwc_ue->e_tai.tac);
+        ogs_debug("    E_CGI[PLMN_ID:%06x,CELL_ID:0x%x]",
+                ogs_plmn_id_hexdump(&sgwc_ue->e_cgi.plmn_id),
+                sgwc_ue->e_cgi.cell_id);
+    }
 
     /* Select SGW-U based on UE Location Information */
     sgwc_sess_select_sgwu(sess);
@@ -354,13 +351,16 @@ void sgwc_s11_handle_modify_bearer_request(
     }
 
     if (req->user_location_information.presence == 1) {
-        decoded = ogs_gtp_parse_uli(
-                &uli, &req->user_location_information);
+        decoded = ogs_gtp_parse_uli(&uli, &req->user_location_information);
         ogs_assert(req->user_location_information.len == decoded);
+
+        sgwc_ue->uli_presence = true;
+
         ogs_nas_to_plmn_id(&sgwc_ue->e_tai.plmn_id, &uli.tai.nas_plmn_id);
         sgwc_ue->e_tai.tac = uli.tai.tac;
         ogs_nas_to_plmn_id(&sgwc_ue->e_cgi.plmn_id, &uli.e_cgi.nas_plmn_id);
         sgwc_ue->e_cgi.cell_id = uli.e_cgi.cell_id;
+
         ogs_debug("    TAI[PLMN_ID:%06x,TAC:%d]",
                 ogs_plmn_id_hexdump(&sgwc_ue->e_tai.plmn_id),
                 sgwc_ue->e_tai.tac);
@@ -535,10 +535,6 @@ void sgwc_s11_handle_create_bearer_response(
         ogs_error("No SGW TEID");
         cause_value = OGS_GTP_CAUSE_MANDATORY_IE_MISSING;
     }
-    if (rsp->user_location_information.presence == 0) {
-        ogs_error("No User Location Inforamtion");
-        cause_value = OGS_GTP_CAUSE_MANDATORY_IE_MISSING;
-    }
 
     if (s11_xact->xid & OGS_GTP_CMD_XACT_ID)
         /* MME received Bearer Resource Modification Request */
@@ -630,19 +626,24 @@ void sgwc_s11_handle_create_bearer_response(
             &far->outer_header_creation, &far->outer_header_creation_len));
     far->outer_header_creation.teid = dl_tunnel->remote_teid;
 
-    decoded = ogs_gtp_parse_uli(&uli, &rsp->user_location_information);
-    ogs_assert(rsp->user_location_information.len == decoded);
-    ogs_nas_to_plmn_id(&sgwc_ue->e_tai.plmn_id, &uli.tai.nas_plmn_id);
-    sgwc_ue->e_tai.tac = uli.tai.tac;
-    ogs_nas_to_plmn_id(&sgwc_ue->e_cgi.plmn_id, &uli.e_cgi.nas_plmn_id);
-    sgwc_ue->e_cgi.cell_id = uli.e_cgi.cell_id;
+    if (rsp->user_location_information.presence == 1) {
+        decoded = ogs_gtp_parse_uli(&uli, &rsp->user_location_information);
+        ogs_assert(rsp->user_location_information.len == decoded);
 
-    ogs_debug("    TAI[PLMN_ID:%06x,TAC:%d]",
-            ogs_plmn_id_hexdump(&sgwc_ue->e_tai.plmn_id),
-            sgwc_ue->e_tai.tac);
-    ogs_debug("    E_CGI[PLMN_ID:%06x,CELL_ID:0x%x]",
-            ogs_plmn_id_hexdump(&sgwc_ue->e_cgi.plmn_id),
-            sgwc_ue->e_cgi.cell_id);
+        sgwc_ue->uli_presence = true;
+
+        ogs_nas_to_plmn_id(&sgwc_ue->e_tai.plmn_id, &uli.tai.nas_plmn_id);
+        sgwc_ue->e_tai.tac = uli.tai.tac;
+        ogs_nas_to_plmn_id(&sgwc_ue->e_cgi.plmn_id, &uli.e_cgi.nas_plmn_id);
+        sgwc_ue->e_cgi.cell_id = uli.e_cgi.cell_id;
+
+        ogs_debug("    TAI[PLMN_ID:%06x,TAC:%d]",
+                ogs_plmn_id_hexdump(&sgwc_ue->e_tai.plmn_id),
+                sgwc_ue->e_tai.tac);
+        ogs_debug("    E_CGI[PLMN_ID:%06x,CELL_ID:0x%x]",
+                ogs_plmn_id_hexdump(&sgwc_ue->e_cgi.plmn_id),
+                sgwc_ue->e_cgi.cell_id);
+    }
 
     ogs_assert(OGS_OK ==
         sgwc_pfcp_send_bearer_modification_request(

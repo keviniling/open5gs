@@ -59,6 +59,7 @@ typedef struct sgwc_ue_s {
     char            imsi_bcd[OGS_MAX_IMSI_BCD_LEN+1];
 
     /* User-Location-Info */
+    bool            uli_presence;
     ogs_eps_tai_t   e_tai;
     ogs_e_cgi_t     e_cgi;
 

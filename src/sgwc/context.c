@@ -317,10 +317,12 @@ static bool compare_ue_info(ogs_pfcp_node_t *node, sgwc_sess_t *sess)
         if (ogs_strcasecmp(node->dnn[i], sess->session.name) == 0) return true;
 
     for (i = 0; i < node->num_of_e_cell_id; i++)
-        if (node->e_cell_id[i] == sgwc_ue->e_cgi.cell_id) return true;
+        if (sgwc_ue->uli_presence == true &&
+            node->e_cell_id[i] == sgwc_ue->e_cgi.cell_id) return true;
 
     for (i = 0; i < node->num_of_tac; i++)
-        if (node->tac[i] == sgwc_ue->e_tai.tac) return true;
+        if (sgwc_ue->uli_presence == true &&
+            node->tac[i] == sgwc_ue->e_tai.tac) return true;
 
     return false;
 }
