@@ -4,3 +4,6 @@ subprojects/libtins
 subprojects/usrsctp
 
 webui/.next
+.idea/*
+build/*
+install/*
