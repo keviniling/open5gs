@@ -292,10 +292,13 @@ struct amf_ue_s {
     char *policy_association_id;
 
     /* 5GMM Capability */
+    /* Kai: add the support and use of 5GS CP optimisation*/
     struct {
         bool lte_positioning_protocol_capability;
         bool ho_attach;
         bool s1_mode;
+        bool cp_ciot_5gs_optimization_support;
+        bool cp_ciot_5gs_optimization_use;
     } gmm_capability;
 
 #define SECURITY_CONTEXT_IS_VALID(__aMF) \

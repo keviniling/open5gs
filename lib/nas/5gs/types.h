@@ -78,12 +78,14 @@ int ogs_nas_parse_s_nssai(
         ogs_nas_s_nssai_ie_t *nas_s_nssai_ie, ogs_nas_s_nssai_t *nas_s_nssai);
 /* 9.11.3.1 5GMM capability
  * O TLV 3-15 */
+/* Kai: 5gmm capability modification */
 typedef struct ogs_nas_5gmm_capability_s {
     uint8_t length;
 ED8(uint8_t service_gap_control:1;,
     uint8_t iphc_cp_ciot_5gs_optimization:1;,
     uint8_t n3_data_trasfer:1;,
-    uint8_t cp_ciot_5gs_optimization:1;,
+    uint8_t cp_ciot_5gs_optimization_support:1;,
+    uint8_t cp_ciot_5gs_optimization_use:1;,
     uint8_t restrict_on_use_of_enhanced_coverage_support:1;,
     uint8_t lte_positioning_protocol_capability:1;,
     uint8_t ho_attach:1;,
