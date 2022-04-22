@@ -330,11 +330,15 @@ int gmm_handle_registration_update(amf_ue_t *amf_ue,
             = gmm_capability->lte_positioning_protocol_capability;
         amf_ue->gmm_capability.ho_attach = gmm_capability->ho_attach;
         amf_ue->gmm_capability.s1_mode = gmm_capability->s1_mode;
+        amf_ue->gmm_capability.cp_ciot_5gs_optimization_support = gmm_capability.cp_ciot_5gs_optimization_support;
+        amf_ue->gmm_capability.cp_ciot_5gs_optimization_use = gmm_capability.cp_ciot_5gs_optimization_use;
 
-        ogs_debug("    5GMM Capability:[LPP:%d, HO_ATTACH:%d, S1_MODE:%d]",
+        ogs_debug("    5GMM Capability:[LPP:%d, HO_ATTACH:%d, S1_MODE:%d, 5GS_CP_OPTIMIZATION_SUPPORT:%d, 5GS_CP_OPTIMIZATION_USE:%d]",
             amf_ue->gmm_capability.lte_positioning_protocol_capability,
             amf_ue->gmm_capability.ho_attach,
-            amf_ue->gmm_capability.s1_mode);
+            amf_ue->gmm_capability.s1_mode,
+            amf_ue->gmm_capability.cp_ciot_5gs_optimization_support,
+            amf_ue->gmm_capability.cp_ciot_5gs_optimization_use);
     }
 
     if (registration_request->presencemask &
