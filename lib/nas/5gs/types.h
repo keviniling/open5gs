@@ -85,7 +85,6 @@ ED8(uint8_t service_gap_control:1;,
     uint8_t iphc_cp_ciot_5gs_optimization:1;,
     uint8_t n3_data_trasfer:1;,
     uint8_t cp_ciot_5gs_optimization_support:1;,
-    uint8_t cp_ciot_5gs_optimization_use:1;,
     uint8_t restrict_on_use_of_enhanced_coverage_support:1;,
     uint8_t lte_positioning_protocol_capability:1;,
     uint8_t ho_attach:1;,
@@ -98,11 +97,12 @@ ED8(uint8_t radio_capability_signalling_optimization_capability:1;,
     uint8_t v2x_capability:1;,
     uint8_t up_ciot_5gs_optimization:1;,
     uint8_t srvcc_5g_capability:1;)
-ED5(uint8_t spare4:4;,
+ED6(uint8_t spare4:4;,
     uint8_t ethernet_header_compression_cp_ciot_5gs_optimization:1;,
     uint8_t multiple_user_plane_resource_support:1;,
     uint8_t wusa_information_reception_capability:1;,
-    uint8_t closed_access_group_capability:1;)
+    uint8_t closed_access_group_capability:1;,
+    uint8_t cp_ciot_5gs_optimization_use:1;)
     uint8_t spare[10];
 } __attribute__ ((packed)) ogs_nas_5gmm_capability_t;
 
