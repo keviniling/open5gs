@@ -9,13 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5af2005-c5b8-4559-b5c1-752998313ab5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/nas/5gs/types.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nas/5gs/types.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nas/common/types.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nas/common/types.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/amf/context.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/amf/context.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/amf/gmm-build.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/amf/gmm-build.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/amf/gmm-handler.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/amf/gmm-handler.c" afterDir="false" />
-    </list>
+    <list default="true" id="d5af2005-c5b8-4559-b5c1-752998313ab5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +57,7 @@
       <workItem from="1650420400570" duration="3878000" />
       <workItem from="1650649134469" duration="8054000" />
       <workItem from="1650835946720" duration="1688000" />
-      <workItem from="1650952036644" duration="3687000" />
+      <workItem from="1650952036644" duration="3992000" />
     </task>
     <servers />
   </component>

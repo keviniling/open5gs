@@ -4,5 +4,3 @@ subprojects/libtins
 subprojects/usrsctp
 
 webui/.next
-
-build
