@@ -326,15 +326,18 @@ int gmm_handle_registration_update(amf_ue_t *amf_ue,
         ogs_nas_5gmm_capability_t *gmm_capability =
             &registration_request->gmm_capability;
 
+        // Kai: add gmm capability
         amf_ue->gmm_capability.lte_positioning_protocol_capability
             = gmm_capability->lte_positioning_protocol_capability;
         amf_ue->gmm_capability.ho_attach = gmm_capability->ho_attach;
         amf_ue->gmm_capability.s1_mode = gmm_capability->s1_mode;
+        amf_ue->gmm_capability.cp_ciot_5gs_optimization = gmm_capability->cp_ciot_5gs_optimization;
 
-        ogs_debug("    5GMM Capability:[LPP:%d, HO_ATTACH:%d, S1_MODE:%d]",
+        ogs_debug("    5GMM Capability:[LPP:%d, HO_ATTACH:%d, S1_MODE:%d, CP_CIOT_OPT: %d]",
             amf_ue->gmm_capability.lte_positioning_protocol_capability,
             amf_ue->gmm_capability.ho_attach,
-            amf_ue->gmm_capability.s1_mode);
+            amf_ue->gmm_capability.s1_mode,
+            amf_ue->gmm_capability.cp_ciot_5gs_optimization);
     }
 
     if (registration_request->presencemask &
@@ -435,6 +438,18 @@ int gmm_handle_registration_update(amf_ue_t *amf_ue,
                             sess, AMF_UPDATE_SM_CONTEXT_REGISTRATION_REQUEST);
             }
         }
+    }
+
+    // kai: 5gs update type
+    if ((registration_request->presencemask &
+                 OGS_NAS_5GS_REGISTRATION_REQUEST_5GS_UPDATE_TYPE_PRESENT) == 0){
+        // Kai: not sure here if it is right
+        amf_ue->nas_5gs_update_type.ng_ran_radio_capability_update_needed = 0;
+    } else{
+        amf_ue->nas_5gs_update_type.control_plane_ciot_5gs_optimization = registration_request->update_type.control_plane_ciot_5gs_optimization;
+        amf_ue->nas_5gs_update_type.control_plane_ciot_eps_optimization = registration_request->update_type.control_plane_ciot_eps_optimization;
+        amf_ue->nas_5gs_update_type.ng_ran_radio_capability_update_needed = registration_request->update_type.ng_ran_radio_capability_update_needed;
+        amf_ue->nas_5gs_update_type.sms_over_nas_supported = registration_request->update_type.sms_over_nas_supported;
     }
 
     return OGS_OK;

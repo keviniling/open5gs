@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5af2005-c5b8-4559-b5c1-752998313ab5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lib/nas/5gs/types.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nas/5gs/types.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/nas/common/types.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nas/common/types.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/amf/context.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/amf/context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/amf/gmm-build.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/amf/gmm-build.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/amf/gmm-handler.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/amf/gmm-handler.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27j6xoQXo9zhbmTqRRZHAvFD7U5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/kevin/open5gs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5af2005-c5b8-4559-b5c1-752998313ab5" name="Changes" comment="" />
+      <created>1649821396620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649821396620</updated>
+      <workItem from="1649821397787" duration="655000" />
+      <workItem from="1650393576645" duration="609000" />
+      <workItem from="1650420400570" duration="3878000" />
+      <workItem from="1650649134469" duration="8054000" />
+      <workItem from="1650835946720" duration="1688000" />
+      <workItem from="1650952036644" duration="3687000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

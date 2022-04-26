@@ -125,6 +125,7 @@ ogs_pkbuf_t *gmm_build_registration_accept(amf_ue_t *amf_ue)
         OGS_NAS_5GS_REGISTRATION_ACCEPT_5GS_NETWORK_FEATURE_SUPPORT_PRESENT;
     network_feature_support->length = 2;
     network_feature_support->ims_vops_3gpp = 1;
+    network_feature_support->nas_5g_iphc_cp_ciot = amf_ue->nas_5gs_update_type.control_plane_ciot_5gs_optimization;
 
     /* Set T3512 */
     registration_accept->presencemask |= OGS_NAS_5GS_REGISTRATION_ACCEPT_T3512_VALUE_PRESENT;

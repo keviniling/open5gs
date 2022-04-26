@@ -1,0 +1,3145 @@
+Build started at 2022-04-26T14:24:38.299694
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.45.1
+Source dir: /home/kevin/open5gs
+Build dir: /home/kevin/open5gs/build
+Build type: native build
+Project name: open5gs
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc /home/kevin/open5gs/build/meson-private/sanitycheckc.c -o /home/kevin/open5gs/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/kevin/open5gs/build/meson-private/sanitycheckc.exe
+Native C compiler: ccache cc (gcc 7.5.0 "cc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
+Sanity testing C++ compiler: ccache c++
+Is cross compiler: False.
+Sanity check compiler command line: ccache c++ /home/kevin/open5gs/build/meson-private/sanitycheckcpp.cc -o /home/kevin/open5gs/build/meson-private/sanitycheckcpp.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/kevin/open5gs/build/meson-private/sanitycheckcpp.exe
+Native C++ compiler: ccache c++ (gcc 7.5.0 "c++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Program git found: YES (/usr/bin/git)
+Program python3 found: YES (/home/kevin/.pyenv/shims/python3)
+Program /home/kevin/.pyenv/shims/python3 found: YES (/home/kevin/.pyenv/shims/python3)
+Running compile:
+Working directory:  /tmp/tmpthsywudq
+Command line:  ccache cc /tmp/tmpthsywudq/testfile.c -O0 -Wextra -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpthsywudq/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpdpr0_5on
+Command line:  ccache cc /tmp/tmpdpr0_5on/testfile.c -O0 -Wlogical-op -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpdpr0_5on/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp51ph94k9
+Command line:  ccache cc /tmp/tmp51ph94k9/testfile.c -O0 -Werror=missing-include-dirs -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp51ph94k9/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp7khwvonu
+Command line:  ccache cc /tmp/tmp7khwvonu/testfile.c -O0 -Werror=pointer-arith -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp7khwvonu/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpa1xqxp5r
+Command line:  ccache cc /tmp/tmpa1xqxp5r/testfile.c -O0 -Werror=init-self -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpa1xqxp5r/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpcmccakkj
+Command line:  ccache cc /tmp/tmpcmccakkj/testfile.c -O0 -Wfloat-equal -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpcmccakkj/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpol4y6wl3
+Command line:  ccache cc /tmp/tmpol4y6wl3/testfile.c -O0 -Wsuggest-attribute=noreturn -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpol4y6wl3/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp4rmspqtf
+Command line:  ccache cc /tmp/tmp4rmspqtf/testfile.c -O0 -Werror=missing-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp4rmspqtf/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpjs3utemy
+Command line:  ccache cc /tmp/tmpjs3utemy/testfile.c -O0 -Werror=missing-declarations -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpjs3utemy/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpi96j9lft
+Command line:  ccache cc /tmp/tmpi96j9lft/testfile.c -O0 -Werror=implicit-function-declaration -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpi96j9lft/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmppqav59xf
+Command line:  ccache cc /tmp/tmppqav59xf/testfile.c -O0 -Werror=return-type -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmppqav59xf/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpb14n1buu
+Command line:  ccache cc /tmp/tmpb14n1buu/testfile.c -O0 -Werror=incompatible-pointer-types -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpb14n1buu/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpe0_hoiwm
+Command line:  ccache cc /tmp/tmpe0_hoiwm/testfile.c -O0 -Werror=format=2 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpe0_hoiwm/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp5k1vzh3m
+Command line:  ccache cc /tmp/tmp5k1vzh3m/testfile.c -O0 -Wstrict-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp5k1vzh3m/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpzbc7_frz
+Command line:  ccache cc /tmp/tmpzbc7_frz/testfile.c -O0 -Wredundant-decls -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpzbc7_frz/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpoxluhgoo
+Command line:  ccache cc /tmp/tmpoxluhgoo/testfile.c -O0 -Wimplicit-fallthrough=5 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpoxluhgoo/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpwxrlsnjr
+Command line:  ccache cc /tmp/tmpwxrlsnjr/testfile.c -O0 -Wendif-labels -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpwxrlsnjr/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpvi1x4tf6
+Command line:  ccache cc /tmp/tmpvi1x4tf6/testfile.c -O0 -Wstrict-aliasing=3 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpvi1x4tf6/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp_rszb5vj
+Command line:  ccache cc /tmp/tmp_rszb5vj/testfile.c -O0 -Wwrite-strings -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp_rszb5vj/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp665qbt0u
+Command line:  ccache cc /tmp/tmp665qbt0u/testfile.c -O0 -Werror=overflow -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp665qbt0u/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp8ax81cvz
+Command line:  ccache cc /tmp/tmp8ax81cvz/testfile.c -O0 -Werror=shift-count-overflow -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp8ax81cvz/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp8ch08bb7
+Command line:  ccache cc /tmp/tmp8ch08bb7/testfile.c -O0 -Werror=shift-overflow=2 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp8ch08bb7/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpr3enmiab
+Command line:  ccache cc /tmp/tmpr3enmiab/testfile.c -O0 -Wdate-time -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpr3enmiab/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpk5lzctr7
+Command line:  ccache cc /tmp/tmpk5lzctr7/testfile.c -O0 -Wnested-externs -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpk5lzctr7/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpc4akob4l
+Command line:  ccache cc /tmp/tmpc4akob4l/testfile.c -O0 -Wunused -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpc4akob4l/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpl3g5fu86
+Command line:  ccache cc /tmp/tmpl3g5fu86/testfile.c -O0 -Wduplicated-branches -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpl3g5fu86/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpvsma8r5i
+Command line:  ccache cc /tmp/tmpvsma8r5i/testfile.c -O0 -Wmisleading-indentation -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpvsma8r5i/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpf_qcaxos
+Command line:  ccache cc /tmp/tmpf_qcaxos/testfile.c -O0 -Wno-sign-compare -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpf_qcaxos/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpltykqx4j
+Command line:  ccache cc /tmp/tmpltykqx4j/testfile.c -O0 -Wno-unused-parameter -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpltykqx4j/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpxsdgxdxn
+Command line:  ccache cc /tmp/tmpxsdgxdxn/testfile.c -O0 -ffast-math -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpxsdgxdxn/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpja6njp46
+Command line:  ccache cc /tmp/tmpja6njp46/testfile.c -O0 -fdiagnostics-show-option -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpja6njp46/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp76fk0mcv
+Command line:  ccache cc /tmp/tmp76fk0mcv/testfile.c -O0 -fstack-protector -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp76fk0mcv/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp65p59xv8
+Command line:  ccache cc /tmp/tmp65p59xv8/testfile.c -O0 -fstack-protector-strong -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp65p59xv8/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmprf50bfor
+Command line:  ccache cc /tmp/tmprf50bfor/testfile.c -O0 --param=ssp-buffer-size=4 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmprf50bfor/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wextra -Wlogical-op -Werror=missing-include-dirs -Werror=pointer-arith -Werror=init-self -Wfloat-equal -Wsuggest-attribute=noreturn -Werror=missing-prototypes -Werror=missing-declarations -Werror=implicit-function-declaration -Werror=return-type -Werror=incompatible-pointer-types -Werror=format=2 -Wstrict-prototypes -Wredundant-decls -Wimplicit-fallthrough=5 -Wendif-labels -Wstrict-aliasing=3 -Wwrite-strings -Werror=overflow -Werror=shift-count-overflow -Werror=shift-overflow=2 -Wdate-time -Wnested-externs -Wunused -Wduplicated-branches -Wmisleading-indentation -Wno-sign-compare -Wno-unused-parameter -ffast-math -fdiagnostics-show-option -fstack-protector -fstack-protector-strong --param=ssp-buffer-size=4: YES
+Configuring sample.yaml using configuration
+Configuring 310014.yaml using configuration
+Configuring csfb.yaml using configuration
+Configuring volte.yaml using configuration
+Configuring vonr.yaml using configuration
+Configuring slice.yaml using configuration
+Configuring srslte.yaml using configuration
+Configuring non3gpp.yaml using configuration
+Program /home/kevin/.pyenv/shims/python3 found: YES (/home/kevin/.pyenv/shims/python3)
+Configuring mme.yaml using configuration
+Configuring sgwc.yaml using configuration
+Configuring sgwu.yaml using configuration
+Configuring smf.yaml using configuration
+Configuring amf.yaml using configuration
+Configuring upf.yaml using configuration
+Configuring hss.yaml using configuration
+Configuring pcrf.yaml using configuration
+Configuring nrf.yaml using configuration
+Configuring ausf.yaml using configuration
+Configuring udm.yaml using configuration
+Configuring udr.yaml using configuration
+Configuring pcf.yaml using configuration
+Configuring nssf.yaml using configuration
+Configuring bsf.yaml using configuration
+Program /home/kevin/.pyenv/shims/python3 found: YES (/home/kevin/.pyenv/shims/python3)
+Configuring mme.conf using configuration
+Configuring hss.conf using configuration
+Configuring smf.conf using configuration
+Configuring pcrf.conf using configuration
+Configuring cacert.pem using configuration
+Configuring mme.cert.pem using configuration
+Configuring mme.key.pem using configuration
+Configuring hss.cert.pem using configuration
+Configuring hss.key.pem using configuration
+Configuring smf.cert.pem using configuration
+Configuring smf.key.pem using configuration
+Configuring pcrf.cert.pem using configuration
+Configuring pcrf.key.pem using configuration
+Configuring open5gs-mmed.service using configuration
+Configuring open5gs-sgwcd.service using configuration
+Configuring open5gs-smfd.service using configuration
+Configuring open5gs-amfd.service using configuration
+Configuring open5gs-sgwud.service using configuration
+Configuring open5gs-upfd.service using configuration
+Configuring open5gs-hssd.service using configuration
+Configuring open5gs-pcrfd.service using configuration
+Configuring open5gs-nrfd.service using configuration
+Configuring open5gs-ausfd.service using configuration
+Configuring open5gs-udmd.service using configuration
+Configuring open5gs-pcfd.service using configuration
+Configuring open5gs-nssfd.service using configuration
+Configuring open5gs-bsfd.service using configuration
+Configuring open5gs-udrd.service using configuration
+Configuring 99-open5gs.netdev using configuration
+Configuring 99-open5gs.network using configuration
+Configuring open5gs using configuration
+Configuring open5gs.conf using configuration
+Running compile:
+Working directory:  /tmp/tmp10e9h6tb
+Command line:  ccache cc /tmp/tmp10e9h6tb/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("arpa/inet.h")
+          #error "Header 'arpa/inet.h' could not be found"
+         #endif
+        #else
+         #include <arpa/inet.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "arpa/inet.h": YES
+Running compile:
+Working directory:  /tmp/tmper7xbf2m
+Command line:  ccache cc /tmp/tmper7xbf2m/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("ctype.h")
+          #error "Header 'ctype.h' could not be found"
+         #endif
+        #else
+         #include <ctype.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "ctype.h": YES
+Running compile:
+Working directory:  /tmp/tmpz57wzs8m
+Command line:  ccache cc /tmp/tmpz57wzs8m/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("errno.h")
+          #error "Header 'errno.h' could not be found"
+         #endif
+        #else
+         #include <errno.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "errno.h": YES
+Running compile:
+Working directory:  /tmp/tmp8h801h08
+Command line:  ccache cc /tmp/tmp8h801h08/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("execinfo.h")
+          #error "Header 'execinfo.h' could not be found"
+         #endif
+        #else
+         #include <execinfo.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "execinfo.h": YES
+Running compile:
+Working directory:  /tmp/tmpub6ck7yi
+Command line:  ccache cc /tmp/tmpub6ck7yi/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("fcntl.h")
+          #error "Header 'fcntl.h' could not be found"
+         #endif
+        #else
+         #include <fcntl.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "fcntl.h": YES
+Running compile:
+Working directory:  /tmp/tmpy9sjk2zt
+Command line:  ccache cc /tmp/tmpy9sjk2zt/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("ifaddrs.h")
+          #error "Header 'ifaddrs.h' could not be found"
+         #endif
+        #else
+         #include <ifaddrs.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "ifaddrs.h": YES
+Running compile:
+Working directory:  /tmp/tmpns6fxlkz
+Command line:  ccache cc /tmp/tmpns6fxlkz/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netdb.h")
+          #error "Header 'netdb.h' could not be found"
+         #endif
+        #else
+         #include <netdb.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netdb.h": YES
+Running compile:
+Working directory:  /tmp/tmp2bldktw6
+Command line:  ccache cc /tmp/tmp2bldktw6/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("pthread.h")
+          #error "Header 'pthread.h' could not be found"
+         #endif
+        #else
+         #include <pthread.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "pthread.h": YES
+Running compile:
+Working directory:  /tmp/tmprc5i7r7v
+Command line:  ccache cc /tmp/tmprc5i7r7v/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("signal.h")
+          #error "Header 'signal.h' could not be found"
+         #endif
+        #else
+         #include <signal.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "signal.h": YES
+Running compile:
+Working directory:  /tmp/tmpx6zk3s83
+Command line:  ccache cc /tmp/tmpx6zk3s83/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdarg.h")
+          #error "Header 'stdarg.h' could not be found"
+         #endif
+        #else
+         #include <stdarg.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdarg.h": YES
+Running compile:
+Working directory:  /tmp/tmpy5xo1zkk
+Command line:  ccache cc /tmp/tmpy5xo1zkk/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stddef.h")
+          #error "Header 'stddef.h' could not be found"
+         #endif
+        #else
+         #include <stddef.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stddef.h": YES
+Running compile:
+Working directory:  /tmp/tmpp6w445sv
+Command line:  ccache cc /tmp/tmpp6w445sv/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdio.h")
+          #error "Header 'stdio.h' could not be found"
+         #endif
+        #else
+         #include <stdio.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdio.h": YES
+Running compile:
+Working directory:  /tmp/tmp0fqjghzm
+Command line:  ccache cc /tmp/tmp0fqjghzm/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdint.h")
+          #error "Header 'stdint.h' could not be found"
+         #endif
+        #else
+         #include <stdint.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdint.h": YES
+Running compile:
+Working directory:  /tmp/tmpmk2mdwee
+Command line:  ccache cc /tmp/tmpmk2mdwee/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdbool.h")
+          #error "Header 'stdbool.h' could not be found"
+         #endif
+        #else
+         #include <stdbool.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdbool.h": YES
+Running compile:
+Working directory:  /tmp/tmp1zit1ja3
+Command line:  ccache cc /tmp/tmp1zit1ja3/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdlib.h")
+          #error "Header 'stdlib.h' could not be found"
+         #endif
+        #else
+         #include <stdlib.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdlib.h": YES
+Running compile:
+Working directory:  /tmp/tmpsxnalywi
+Command line:  ccache cc /tmp/tmpsxnalywi/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("string.h")
+          #error "Header 'string.h' could not be found"
+         #endif
+        #else
+         #include <string.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "string.h": YES
+Running compile:
+Working directory:  /tmp/tmpbod37k2h
+Command line:  ccache cc /tmp/tmpbod37k2h/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("strings.h")
+          #error "Header 'strings.h' could not be found"
+         #endif
+        #else
+         #include <strings.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "strings.h": YES
+Running compile:
+Working directory:  /tmp/tmpkkuy05uv
+Command line:  ccache cc /tmp/tmpkkuy05uv/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("time.h")
+          #error "Header 'time.h' could not be found"
+         #endif
+        #else
+         #include <time.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "time.h": YES
+Running compile:
+Working directory:  /tmp/tmp2abfkyr6
+Command line:  ccache cc /tmp/tmp2abfkyr6/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/time.h")
+          #error "Header 'sys/time.h' could not be found"
+         #endif
+        #else
+         #include <sys/time.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/time.h": YES
+Running compile:
+Working directory:  /tmp/tmph3qq_vjh
+Command line:  ccache cc /tmp/tmph3qq_vjh/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("unistd.h")
+          #error "Header 'unistd.h' could not be found"
+         #endif
+        #else
+         #include <unistd.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "unistd.h": YES
+Running compile:
+Working directory:  /tmp/tmpn545he5d
+Command line:  ccache cc /tmp/tmpn545he5d/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("net/if.h")
+          #error "Header 'net/if.h' could not be found"
+         #endif
+        #else
+         #include <net/if.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "net/if.h": YES
+Running compile:
+Working directory:  /tmp/tmpy6kjcu5e
+Command line:  ccache cc /tmp/tmpy6kjcu5e/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/in.h")
+          #error "Header 'netinet/in.h' could not be found"
+         #endif
+        #else
+         #include <netinet/in.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/in.h": YES
+Running compile:
+Working directory:  /tmp/tmp7fuoc8bw
+Command line:  ccache cc /tmp/tmp7fuoc8bw/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/in_systm.h")
+          #error "Header 'netinet/in_systm.h' could not be found"
+         #endif
+        #else
+         #include <netinet/in_systm.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/in_systm.h": YES
+Running compile:
+Working directory:  /tmp/tmp0ohan4kp
+Command line:  ccache cc /tmp/tmp0ohan4kp/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/udp.h")
+          #error "Header 'netinet/udp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/udp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/udp.h": YES
+Running compile:
+Working directory:  /tmp/tmpd85msnvd
+Command line:  ccache cc /tmp/tmpd85msnvd/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/tcp.h")
+          #error "Header 'netinet/tcp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/tcp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/tcp.h": YES
+Running compile:
+Working directory:  /tmp/tmpsyq4v4cf
+Command line:  ccache cc /tmp/tmpsyq4v4cf/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/ioctl.h")
+          #error "Header 'sys/ioctl.h' could not be found"
+         #endif
+        #else
+         #include <sys/ioctl.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/ioctl.h": YES
+Running compile:
+Working directory:  /tmp/tmp9anuatin
+Command line:  ccache cc /tmp/tmp9anuatin/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/param.h")
+          #error "Header 'sys/param.h' could not be found"
+         #endif
+        #else
+         #include <sys/param.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/param.h": YES
+Running compile:
+Working directory:  /tmp/tmp5p6wpc86
+Command line:  ccache cc /tmp/tmp5p6wpc86/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/random.h")
+          #error "Header 'sys/random.h' could not be found"
+         #endif
+        #else
+         #include <sys/random.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/random.h": YES
+Running compile:
+Working directory:  /tmp/tmp0f0w19o3
+Command line:  ccache cc /tmp/tmp0f0w19o3/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/socket.h")
+          #error "Header 'sys/socket.h' could not be found"
+         #endif
+        #else
+         #include <sys/socket.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/socket.h": YES
+Running compile:
+Working directory:  /tmp/tmpkxtue88f
+Command line:  ccache cc /tmp/tmpkxtue88f/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/stat.h")
+          #error "Header 'sys/stat.h' could not be found"
+         #endif
+        #else
+         #include <sys/stat.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/stat.h": YES
+Running compile:
+Working directory:  /tmp/tmpid910dvz
+Command line:  ccache cc /tmp/tmpid910dvz/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("limits.h")
+          #error "Header 'limits.h' could not be found"
+         #endif
+        #else
+         #include <limits.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "limits.h": YES
+Running compile:
+Working directory:  /tmp/tmpa9nqht66
+Command line:  ccache cc /tmp/tmpa9nqht66/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/syslimits.h")
+          #error "Header 'sys/syslimits.h' could not be found"
+         #endif
+        #else
+         #include <sys/syslimits.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpa9nqht66/testfile.c:4:12: error: #error "Header 'sys/syslimits.h' could not be found"
+           #error "Header 'sys/syslimits.h' could not be found"
+            ^~~~~
+
+Has header "sys/syslimits.h": NO
+Running compile:
+Working directory:  /tmp/tmp51s_l2yj
+Command line:  ccache cc /tmp/tmp51s_l2yj/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/types.h")
+          #error "Header 'sys/types.h' could not be found"
+         #endif
+        #else
+         #include <sys/types.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/types.h": YES
+Running compile:
+Working directory:  /tmp/tmp2zuqrti0
+Command line:  ccache cc /tmp/tmp2zuqrti0/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/wait.h")
+          #error "Header 'sys/wait.h' could not be found"
+         #endif
+        #else
+         #include <sys/wait.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/wait.h": YES
+Running compile:
+Working directory:  /tmp/tmp0gumdq2a
+Command line:  ccache cc /tmp/tmp0gumdq2a/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/uio.h")
+          #error "Header 'sys/uio.h' could not be found"
+         #endif
+        #else
+         #include <sys/uio.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/uio.h": YES
+Running compile:
+Working directory:  /tmp/tmpyg4l1cl1
+Command line:  ccache cc /tmp/tmpyg4l1cl1/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpyg4l1cl1/output.exe 
+
+Code:
+ 
+        #define arc4random meson_disable_define_of_arc4random
+        
+        #include <limits.h>
+        #undef arc4random
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char arc4random ();
+        
+        #if defined __stub_arc4random || defined __stub___arc4random
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return arc4random ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/ccABeoXf.o: In function `main':
+testfile.c:(.text+0xa): undefined reference to `arc4random'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /tmp/tmp9d9o8hb7
+Command line:  ccache cc /tmp/tmp9d9o8hb7/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp9d9o8hb7/output.exe 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_arc4random)
+                #error "__builtin_arc4random not found"
+            #endif
+        #elif ! defined(arc4random)
+            /* Check for __builtin_arc4random only if no includes were added to the
+             * prefix above, which means no definition of arc4random can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_arc4random;
+            #else
+                #error "No definition for __builtin_arc4random found in the prefix"
+            #endif
+        #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmp9d9o8hb7/testfile.c: In function ‘main’:
+/tmp/tmp9d9o8hb7/testfile.c:14:17: error: ‘__builtin_arc4random’ undeclared (first use in this function); did you mean ‘__builtin_acos’?
+                 __builtin_arc4random;
+                 ^~~~~~~~~~~~~~~~~~~~
+                 __builtin_acos
+/tmp/tmp9d9o8hb7/testfile.c:14:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "arc4random": NO
+Running compile:
+Working directory:  /tmp/tmpu670bwmr
+Command line:  ccache cc /tmp/tmpu670bwmr/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpu670bwmr/output.exe 
+
+Code:
+ 
+        #define arc4random_buf meson_disable_define_of_arc4random_buf
+        
+        #include <limits.h>
+        #undef arc4random_buf
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char arc4random_buf ();
+        
+        #if defined __stub_arc4random_buf || defined __stub___arc4random_buf
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return arc4random_buf ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/ccOHE9ki.o: In function `main':
+testfile.c:(.text+0xa): undefined reference to `arc4random_buf'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /tmp/tmpk95jp5lk
+Command line:  ccache cc /tmp/tmpk95jp5lk/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpk95jp5lk/output.exe 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_arc4random_buf)
+                #error "__builtin_arc4random_buf not found"
+            #endif
+        #elif ! defined(arc4random_buf)
+            /* Check for __builtin_arc4random_buf only if no includes were added to the
+             * prefix above, which means no definition of arc4random_buf can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_arc4random_buf;
+            #else
+                #error "No definition for __builtin_arc4random_buf found in the prefix"
+            #endif
+        #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpk95jp5lk/testfile.c: In function ‘main’:
+/tmp/tmpk95jp5lk/testfile.c:14:17: error: ‘__builtin_arc4random_buf’ undeclared (first use in this function); did you mean ‘__builtin_acosf’?
+                 __builtin_arc4random_buf;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~
+                 __builtin_acosf
+/tmp/tmpk95jp5lk/testfile.c:14:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "arc4random_buf": NO
+Running compile:
+Working directory:  /tmp/tmp8aitza0o
+Command line:  ccache cc /tmp/tmp8aitza0o/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp8aitza0o/output.exe 
+
+Code:
+ 
+        #define getrandom meson_disable_define_of_getrandom
+        
+        #include <limits.h>
+        #undef getrandom
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getrandom ();
+        
+        #if defined __stub_getrandom || defined __stub___getrandom
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return getrandom ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getrandom": YES
+Running compile:
+Working directory:  /tmp/tmpkux04lnk
+Command line:  ccache cc /tmp/tmpkux04lnk/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpkux04lnk/output.exe 
+
+Code:
+ 
+        #define localtime_r meson_disable_define_of_localtime_r
+        
+        #include <limits.h>
+        #undef localtime_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char localtime_r ();
+        
+        #if defined __stub_localtime_r || defined __stub___localtime_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return localtime_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "localtime_r": YES
+Running compile:
+Working directory:  /tmp/tmpq0qk2lhx
+Command line:  ccache cc /tmp/tmpq0qk2lhx/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpq0qk2lhx/output.exe 
+
+Code:
+ 
+        #define getifaddrs meson_disable_define_of_getifaddrs
+        
+        #include <limits.h>
+        #undef getifaddrs
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getifaddrs ();
+        
+        #if defined __stub_getifaddrs || defined __stub___getifaddrs
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return getifaddrs ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getifaddrs": YES
+Running compile:
+Working directory:  /tmp/tmplp9xw71v
+Command line:  ccache cc /tmp/tmplp9xw71v/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmplp9xw71v/output.exe 
+
+Code:
+ 
+        #define getenv meson_disable_define_of_getenv
+        
+        #include <limits.h>
+        #undef getenv
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getenv ();
+        
+        #if defined __stub_getenv || defined __stub___getenv
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return getenv ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getenv": YES
+Running compile:
+Working directory:  /tmp/tmp8mg0i3qt
+Command line:  ccache cc /tmp/tmp8mg0i3qt/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp8mg0i3qt/output.exe 
+
+Code:
+ 
+        #define putenv meson_disable_define_of_putenv
+        
+        #include <limits.h>
+        #undef putenv
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char putenv ();
+        
+        #if defined __stub_putenv || defined __stub___putenv
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return putenv ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "putenv": YES
+Running compile:
+Working directory:  /tmp/tmp4xc_7jdy
+Command line:  ccache cc /tmp/tmp4xc_7jdy/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp4xc_7jdy/output.exe 
+
+Code:
+ 
+        #define setenv meson_disable_define_of_setenv
+        
+        #include <limits.h>
+        #undef setenv
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char setenv ();
+        
+        #if defined __stub_setenv || defined __stub___setenv
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return setenv ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "setenv": YES
+Running compile:
+Working directory:  /tmp/tmp68q3vfi1
+Command line:  ccache cc /tmp/tmp68q3vfi1/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp68q3vfi1/output.exe 
+
+Code:
+ 
+        #define unsetenv meson_disable_define_of_unsetenv
+        
+        #include <limits.h>
+        #undef unsetenv
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char unsetenv ();
+        
+        #if defined __stub_unsetenv || defined __stub___unsetenv
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return unsetenv ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "unsetenv": YES
+Running compile:
+Working directory:  /tmp/tmpvb7znl0f
+Command line:  ccache cc /tmp/tmpvb7znl0f/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpvb7znl0f/output.exe 
+
+Code:
+ 
+        #define strerror_r meson_disable_define_of_strerror_r
+        
+        #include <limits.h>
+        #undef strerror_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strerror_r ();
+        
+        #if defined __stub_strerror_r || defined __stub___strerror_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return strerror_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strerror_r": YES
+Running compile:
+Working directory:  /tmp/tmpfk8y8al5
+Command line:  ccache cc /tmp/tmpfk8y8al5/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpfk8y8al5/output.exe 
+
+Code:
+ 
+        #define sigaction meson_disable_define_of_sigaction
+        
+        #include <limits.h>
+        #undef sigaction
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sigaction ();
+        
+        #if defined __stub_sigaction || defined __stub___sigaction
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return sigaction ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "sigaction": YES
+Running compile:
+Working directory:  /tmp/tmp_4nvsxgh
+Command line:  ccache cc /tmp/tmp_4nvsxgh/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp_4nvsxgh/output.exe 
+
+Code:
+ 
+        #define sigwait meson_disable_define_of_sigwait
+        
+        #include <limits.h>
+        #undef sigwait
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sigwait ();
+        
+        #if defined __stub_sigwait || defined __stub___sigwait
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return sigwait ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "sigwait": YES
+Running compile:
+Working directory:  /tmp/tmpyu2y315a
+Command line:  ccache cc /tmp/tmpyu2y315a/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpyu2y315a/output.exe 
+
+Code:
+ 
+        #define sigsuspend meson_disable_define_of_sigsuspend
+        
+        #include <limits.h>
+        #undef sigsuspend
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sigsuspend ();
+        
+        #if defined __stub_sigsuspend || defined __stub___sigsuspend
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return sigsuspend ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "sigsuspend": YES
+Running compile:
+Working directory:  /tmp/tmplnyjbug6
+Command line:  ccache cc /tmp/tmplnyjbug6/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmplnyjbug6/output.exe 
+
+Code:
+ 
+        #define eventfd meson_disable_define_of_eventfd
+        
+        #include <limits.h>
+        #undef eventfd
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char eventfd ();
+        
+        #if defined __stub_eventfd || defined __stub___eventfd
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return eventfd ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "eventfd": YES
+Running compile:
+Working directory:  /tmp/tmpovd6fl7j
+Command line:  ccache cc /tmp/tmpovd6fl7j/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpovd6fl7j/output.exe 
+
+Code:
+ 
+        #define kqueue meson_disable_define_of_kqueue
+        
+        #include <limits.h>
+        #undef kqueue
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char kqueue ();
+        
+        #if defined __stub_kqueue || defined __stub___kqueue
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return kqueue ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/ccNQoEUp.o: In function `main':
+testfile.c:(.text+0xa): undefined reference to `kqueue'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /tmp/tmpcvrbhsow
+Command line:  ccache cc /tmp/tmpcvrbhsow/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpcvrbhsow/output.exe 
+
+Code:
+ 
+        int main() {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_kqueue)
+                #error "__builtin_kqueue not found"
+            #endif
+        #elif ! defined(kqueue)
+            /* Check for __builtin_kqueue only if no includes were added to the
+             * prefix above, which means no definition of kqueue can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_kqueue;
+            #else
+                #error "No definition for __builtin_kqueue found in the prefix"
+            #endif
+        #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpcvrbhsow/testfile.c: In function ‘main’:
+/tmp/tmpcvrbhsow/testfile.c:14:17: error: ‘__builtin_kqueue’ undeclared (first use in this function); did you mean ‘__builtin_free’?
+                 __builtin_kqueue;
+                 ^~~~~~~~~~~~~~~~
+                 __builtin_free
+/tmp/tmpcvrbhsow/testfile.c:14:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "kqueue": NO
+Running compile:
+Working directory:  /tmp/tmpu0fhlvtc
+Command line:  ccache cc /tmp/tmpu0fhlvtc/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpu0fhlvtc/output.exe 
+
+Code:
+ 
+        #define epoll_ctl meson_disable_define_of_epoll_ctl
+        
+        #include <limits.h>
+        #undef epoll_ctl
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char epoll_ctl ();
+        
+        #if defined __stub_epoll_ctl || defined __stub___epoll_ctl
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return epoll_ctl ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "epoll_ctl": YES
+Dependency threads found: YES
+Running compile:
+Working directory:  /tmp/tmps27dz5xe
+Command line:  ccache cc /tmp/tmps27dz5xe/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmps27dz5xe/output.obj 
+
+Code:
+ 
+        #include <pthread.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef pthread_barrier_wait
+                pthread_barrier_wait;
+            #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <pthread.h> has symbol "pthread_barrier_wait": YES
+Running compile:
+Working directory:  /tmp/tmpb1p1rx3j
+Command line:  ccache cc /tmp/tmpb1p1rx3j/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpb1p1rx3j/output.obj 
+
+Code:
+ 
+        #include <signal.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef sys_siglist
+                sys_siglist;
+            #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <signal.h> has symbol "sys_siglist": YES
+Running compile:
+Working directory:  /tmp/tmpfpmzhs55
+Command line:  ccache cc /tmp/tmpfpmzhs55/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpfpmzhs55/output.obj 
+
+Code:
+ #define _GNU_SOURCE
+                      #include <string.h>
+                      int func (void) {
+                          char error_string[256];
+                          char *ptr = strerror_r (-2, error_string, 256);
+                          char c = *strerror_r (-2, error_string, 256);
+                          return c != 0 && ptr != (void*) 0L;
+                      }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "strerror_r() returns char *" compiles: YES
+Running compile:
+Working directory:  /tmp/tmp1iqok5l5
+Command line:  ccache cc /tmp/tmp1iqok5l5/testfile.c -O0 -Wl,--start-group -lexecinfo -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp1iqok5l5/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lexecinfo
+collect2: error: ld returned 1 exit status
+
+Library execinfo found: NO
+Running compile:
+Working directory:  /tmp/tmpk7hf9862
+Command line:  ccache cc /tmp/tmpk7hf9862/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpk7hf9862/output.exe 
+
+Code:
+ #include <execinfo.h>
+#include <limits.h>
+
+        #if defined __stub_backtrace || defined __stub___backtrace
+        fail fail fail this function is not going to work
+        #endif
+        
+int main() {
+            void *a = (void*) &backtrace;
+            long b = (long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "backtrace": YES
+Running compile:
+Working directory:  /tmp/tmp3y4cyzoi
+Command line:  ccache cc /tmp/tmp3y4cyzoi/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp3y4cyzoi/output.exe 
+
+Code:
+ 
+    #include <time.h>
+    struct timespec t;
+    int main (int argc, char ** argv) {
+        return clock_gettime(CLOCK_REALTIME, &t);
+    }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "clock_gettime()" links: YES
+Running command: /usr/bin/[ -c /dev/urandom ]
+--- stdout----
+
+----stderr----
+
+
+Running compile:
+Working directory:  /tmp/tmp4ky3xonp
+Command line:  ccache cc /tmp/tmp4ky3xonp/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp4ky3xonp/output.exe 
+
+Code:
+ #include <sys/eventfd.h>
+               #include <unistd.h>
+               int main (int argc, char ** argv) {
+                   eventfd (0, EFD_CLOEXEC);
+                   return 0;
+               }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "eventfd(2) system call" links: YES
+Running compile:
+Working directory:  /tmp/tmp84152jxx
+Command line:  ccache cc /tmp/tmp84152jxx/testfile.c -O0 -Wl,--start-group -lsocket -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp84152jxx/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+
+Library socket found: NO
+Running compile:
+Working directory:  /tmp/tmpyngzh90q
+Command line:  ccache cc /tmp/tmpyngzh90q/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpyngzh90q/output.exe 
+
+Code:
+ #include <sys/types.h>
+                     #include <sys/socket.h>
+                     int main (int argc, char ** argv) {
+                         return socket(1, 2, 3);
+                     }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "socket()" links: YES
+Configuring core-config-private.h using configuration
+Configuring core-config.h using configuration
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'talloc' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency talloc found: YES 2.1.10
+Running compile:
+Working directory:  /tmp/tmpe0g45k55
+Command line:  ccache cc /tmp/tmpe0g45k55/testfile.c -O0 -Wno-shift-negative-value -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpe0g45k55/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpvbn6m5ml
+Command line:  ccache cc /tmp/tmpvbn6m5ml/testfile.c -O0 -Wno-unused-but-set-variable -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpvbn6m5ml/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp6sgmwm89
+Command line:  ccache cc /tmp/tmp6sgmwm89/testfile.c -O0 -Wno-unknown-warning-option -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp6sgmwm89/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp54bsf9va
+Command line:  ccache cc /tmp/tmp54bsf9va/testfile.c -O0 -Wno-missing-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp54bsf9va/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp9nyo4ptm
+Command line:  ccache cc /tmp/tmp9nyo4ptm/testfile.c -O0 -Wno-missing-declarations -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp9nyo4ptm/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp4rsuuwtl
+Command line:  ccache cc /tmp/tmp4rsuuwtl/testfile.c -O0 -Wno-discarded-qualifiers -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp4rsuuwtl/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp79jeehzb
+Command line:  ccache cc /tmp/tmp79jeehzb/testfile.c -O0 -Wno-redundant-decls -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp79jeehzb/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpj30sgeb0
+Command line:  ccache cc /tmp/tmpj30sgeb0/testfile.c -O0 -Wno-shift-overflow -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpj30sgeb0/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp4dycmzk2
+Command line:  ccache cc /tmp/tmp4dycmzk2/testfile.c -O0 -Wno-float-equal -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp4dycmzk2/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpcyt3md_i
+Command line:  ccache cc /tmp/tmpcyt3md_i/testfile.c -O0 -Wno-implicit-fallthrough -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpcyt3md_i/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpfhoir8bj
+Command line:  ccache cc /tmp/tmpfhoir8bj/testfile.c -O0 -Wno-incompatible-pointer-types-discards-qualifiers -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpfhoir8bj/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpz7sxar1t
+Command line:  ccache cc /tmp/tmpz7sxar1t/testfile.c -O0 -Wno-format-nonliteral -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpz7sxar1t/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpr0sf4zbk
+Command line:  ccache cc /tmp/tmpr0sf4zbk/testfile.c -O0 -Wno-cpp -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpr0sf4zbk/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-shift-negative-value -Wno-unused-but-set-variable -Wno-unknown-warning-option -Wno-missing-prototypes -Wno-missing-declarations -Wno-discarded-qualifiers -Wno-redundant-decls -Wno-shift-overflow -Wno-float-equal -Wno-implicit-fallthrough -Wno-incompatible-pointer-types-discards-qualifiers -Wno-format-nonliteral -Wno-cpp: YES
+Determining dependency 'yaml-0.1' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency yaml-0.1 found: YES 0.1.7
+Running compile:
+Working directory:  /tmp/tmp4q1muyg3
+Command line:  ccache cc /tmp/tmp4q1muyg3/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/sctp.h")
+          #error "Header 'netinet/sctp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/sctp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/sctp.h": YES
+Running compile:
+Working directory:  /tmp/tmple761g84
+Command line:  ccache cc /tmp/tmple761g84/testfile.c -O0 -Wl,--start-group -lsctp -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmple761g84/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library sctp found: YES
+Configuring sctp-config.h using configuration
+Determining dependency 'libmongoc-1.0' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency libmongoc-1.0 found: YES 1.9.3-dev
+
+Executing subproject freeDiameter.
+
+Project name: freediameter
+Native C compiler: ccache cc (gcc 7.5.0 "cc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0")
+Program flex found: YES (/usr/bin/flex)
+Program bison found: YES (/usr/bin/bison)
+Running compile:
+Working directory:  /tmp/tmp66pk9tgg
+Command line:  ccache cc /tmp/tmp66pk9tgg/testfile.c -O0 -Werror -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp66pk9tgg/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmptqv3c6b_
+Command line:  ccache cc /tmp/tmptqv3c6b_/testfile.c -O0 -Wno-unused-variable -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmptqv3c6b_/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpgjwxdr93
+Command line:  ccache cc /tmp/tmpgjwxdr93/testfile.c -O0 -Wno-unused-but-set-variable -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpgjwxdr93/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpqu7yn_2f
+Command line:  ccache cc /tmp/tmpqu7yn_2f/testfile.c -O0 -Wno-maybe-uninitialized -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpqu7yn_2f/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmphibu27c9
+Command line:  ccache cc /tmp/tmphibu27c9/testfile.c -O0 -Wno-format-truncation -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmphibu27c9/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpytnutk83
+Command line:  ccache cc /tmp/tmpytnutk83/testfile.c -O0 -Wno-stringop-truncation -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpytnutk83/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror -Wno-unused-variable -Wno-unused-but-set-variable -Wno-maybe-uninitialized -Wno-format-truncation -Wno-stringop-truncation: YES
+Running compile:
+Working directory:  /tmp/tmp4d4qkym5
+Command line:  ccache cc /tmp/tmp4d4qkym5/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("malloc.h")
+          #error "Header 'malloc.h' could not be found"
+         #endif
+        #else
+         #include <malloc.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "malloc.h": YES
+Running compile:
+Working directory:  /tmp/tmpg3zgzt7u
+Command line:  ccache cc /tmp/tmpg3zgzt7u/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("signalent.h")
+          #error "Header 'signalent.h' could not be found"
+         #endif
+        #else
+         #include <signalent.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpg3zgzt7u/testfile.c:4:12: error: #error "Header 'signalent.h' could not be found"
+           #error "Header 'signalent.h' could not be found"
+            ^~~~~
+
+Has header "signalent.h": NO
+Running compile:
+Working directory:  /tmp/tmp2djulwzu
+Command line:  ccache cc /tmp/tmp2djulwzu/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp2djulwzu/output.exe 
+
+Code:
+ 
+        #define strndup meson_disable_define_of_strndup
+        
+        #include <limits.h>
+        #undef strndup
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strndup ();
+        
+        #if defined __stub_strndup || defined __stub___strndup
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return strndup ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmp2djulwzu/testfile.c:10:14: warning: conflicting types for built-in function ‘strndup’ [-Wbuiltin-declaration-mismatch]
+         char strndup ();
+              ^~~~~~~
+
+Checking for function "strndup": YES
+Running compile:
+Working directory:  /tmp/tmp7wpd3zug
+Command line:  ccache cc /tmp/tmp7wpd3zug/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp7wpd3zug/output.exe 
+
+Code:
+ 
+        #define getopt_long meson_disable_define_of_getopt_long
+        
+        #include <limits.h>
+        #undef getopt_long
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getopt_long ();
+        
+        #if defined __stub_getopt_long || defined __stub___getopt_long
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return getopt_long ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getopt_long": YES
+Running compile:
+Working directory:  /tmp/tmplvhd87xt
+Command line:  ccache cc /tmp/tmplvhd87xt/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmplvhd87xt/output.exe 
+
+Code:
+ 
+        #define getifaddrs meson_disable_define_of_getifaddrs
+        
+        #include <limits.h>
+        #undef getifaddrs
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getifaddrs ();
+        
+        #if defined __stub_getifaddrs || defined __stub___getifaddrs
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return getifaddrs ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getifaddrs": YES
+Running compile:
+Working directory:  /tmp/tmpr0jatgsq
+Command line:  ccache cc /tmp/tmpr0jatgsq/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpr0jatgsq/output.obj 
+
+Code:
+ 
+        #include <netinet/in.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef ntohll
+                ntohll;
+            #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpr0jatgsq/testfile.c: In function ‘main’:
+/tmp/tmpr0jatgsq/testfile.c:6:17: error: ‘ntohll’ undeclared (first use in this function); did you mean ‘ntohl’?
+                 ntohll;
+                 ^~~~~~
+                 ntohl
+/tmp/tmpr0jatgsq/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <netinet/in.h> has symbol "ntohll": NO
+Running compile:
+Working directory:  /tmp/tmpmtn3w6oz
+Command line:  ccache cc /tmp/tmpmtn3w6oz/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpmtn3w6oz/output.obj 
+
+Code:
+ 
+        #include <netdb.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef AI_ADDRCONFIG
+                AI_ADDRCONFIG;
+            #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <netdb.h> has symbol "AI_ADDRCONFIG": YES
+Dependency threads found: YES (cached)
+Running compile:
+Working directory:  /tmp/tmp31f5st14
+Command line:  ccache cc /tmp/tmp31f5st14/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp31f5st14/output.obj 
+
+Code:
+ 
+        #include <pthread.h>
+        int main () {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef pthread_barrier_wait
+                pthread_barrier_wait;
+            #endif
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <pthread.h> has symbol "pthread_barrier_wait": YES
+Running compile:
+Working directory:  /tmp/tmpgqo51xgb
+Command line:  ccache cc /tmp/tmpgqo51xgb/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpgqo51xgb/output.exe 
+
+Code:
+ 
+    #include <time.h>
+    struct timespec t;
+    int main (int argc, char ** argv) {
+        return clock_gettime(CLOCK_REALTIME, &t);
+    }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "clock_gettime()" links: YES
+Running compile:
+Working directory:  /tmp/tmpcunyo0yk
+Command line:  ccache cc /tmp/tmpcunyo0yk/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpcunyo0yk/output.exe 
+
+Code:
+ 
+    #include <dlfcn.h>
+    int underscore_test (void) { return 42; }
+    int main (int argc, char ** argv) {
+        void *f1 = (void*)0, *f2 = (void*)0, *handle;
+        handle = dlopen ((void*)0, 0);
+        if (handle) {
+            f1 = dlsym (handle, "underscore_test");
+            f2 = dlsym (handle, "_underscore_test");
+        }
+        return (!f2 || f1);
+    }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/ccmc3YIe.o: In function `main':
+testfile.c:(.text+0x35): undefined reference to `dlopen'
+testfile.c:(.text+0x53): undefined reference to `dlsym'
+testfile.c:(.text+0x6a): undefined reference to `dlsym'
+collect2: error: ld returned 1 exit status
+
+Checking if "dlopen() and dlsym() in system libraries" links: NO
+Running compile:
+Working directory:  /tmp/tmpu2tcdqw2
+Command line:  ccache cc /tmp/tmpu2tcdqw2/testfile.c -O0 -std=gnu89 -Wl,--start-group -ldl -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpu2tcdqw2/output.exe 
+
+Code:
+ 
+    #include <dlfcn.h>
+    int underscore_test (void) { return 42; }
+    int main (int argc, char ** argv) {
+        void *f1 = (void*)0, *f2 = (void*)0, *handle;
+        handle = dlopen ((void*)0, 0);
+        if (handle) {
+            f1 = dlsym (handle, "underscore_test");
+            f2 = dlsym (handle, "_underscore_test");
+        }
+        return (!f2 || f1);
+    }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "dlopen() and dlsym() in libdl" links: YES
+Running compile:
+Working directory:  /tmp/tmp9yr4well
+Command line:  ccache cc /tmp/tmp9yr4well/testfile.c -O0 -Wl,--start-group -ldl -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp9yr4well/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+Running compile:
+Working directory:  /tmp/tmpz53vw2od
+Command line:  ccache cc /tmp/tmpz53vw2od/testfile.c -O0 -Wl,--start-group -lgcrypt -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpz53vw2od/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library gcrypt found: YES
+Running compile:
+Working directory:  /tmp/tmpilsjjkm0
+Command line:  ccache cc /tmp/tmpilsjjkm0/testfile.c -O0 -Wl,--start-group -lidn -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpilsjjkm0/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library idn found: YES
+Running compile:
+Working directory:  /tmp/tmpxb_94yqi
+Command line:  ccache cc /tmp/tmpxb_94yqi/testfile.c -O0 -Wl,--start-group -lgnutls -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpxb_94yqi/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library gnutls found: YES
+Running compile:
+Working directory:  /tmp/tmp6ww9swq9
+Command line:  ccache cc /tmp/tmp6ww9swq9/testfile.c -O0 -std=gnu89 -Wl,--start-group -lgnutls -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp6ww9swq9/output.exe 
+
+Code:
+ 
+        #define gnutls_hash meson_disable_define_of_gnutls_hash
+        
+        #include <limits.h>
+        #undef gnutls_hash
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char gnutls_hash ();
+        
+        #if defined __stub_gnutls_hash || defined __stub___gnutls_hash
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return gnutls_hash ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "gnutls_hash": YES
+Running compile:
+Working directory:  /tmp/tmp1yzancli
+Command line:  ccache cc /tmp/tmp1yzancli/testfile.c -O0 -std=gnu89 -Wl,--start-group -lgnutls -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp1yzancli/output.exe 
+
+Code:
+ 
+        #define gnutls_transport_set_vec_push_function meson_disable_define_of_gnutls_transport_set_vec_push_function
+        
+        #include <limits.h>
+        #undef gnutls_transport_set_vec_push_function
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char gnutls_transport_set_vec_push_function ();
+        
+        #if defined __stub_gnutls_transport_set_vec_push_function || defined __stub___gnutls_transport_set_vec_push_function
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return gnutls_transport_set_vec_push_function ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "gnutls_transport_set_vec_push_function": YES
+Running compile:
+Working directory:  /tmp/tmp_5yln4av
+Command line:  ccache cc /tmp/tmp_5yln4av/testfile.c -O0 -std=gnu89 -Wl,--start-group -lgnutls -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp_5yln4av/output.exe 
+
+Code:
+ 
+        #define gnutls_x509_trust_list_verify_crt meson_disable_define_of_gnutls_x509_trust_list_verify_crt
+        
+        #include <limits.h>
+        #undef gnutls_x509_trust_list_verify_crt
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char gnutls_x509_trust_list_verify_crt ();
+        
+        #if defined __stub_gnutls_x509_trust_list_verify_crt || defined __stub___gnutls_x509_trust_list_verify_crt
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return gnutls_x509_trust_list_verify_crt ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "gnutls_x509_trust_list_verify_crt": YES
+Running compile:
+Working directory:  /tmp/tmp14369uht
+Command line:  ccache cc /tmp/tmp14369uht/testfile.c -O0 -std=gnu89 -Wl,--start-group -lgnutls -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp14369uht/output.exe 
+
+Code:
+ 
+        #define gnutls_handshake_set_timeout meson_disable_define_of_gnutls_handshake_set_timeout
+        
+        #include <limits.h>
+        #undef gnutls_handshake_set_timeout
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char gnutls_handshake_set_timeout ();
+        
+        #if defined __stub_gnutls_handshake_set_timeout || defined __stub___gnutls_handshake_set_timeout
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main () {
+          return gnutls_handshake_set_timeout ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "gnutls_handshake_set_timeout": YES
+Running compile:
+Working directory:  /tmp/tmpzh12qksm
+Command line:  ccache cc /tmp/tmpzh12qksm/testfile.c -O0 -Wl,--start-group -lsctp -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpzh12qksm/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library sctp found: YES
+Running compile:
+Working directory:  /tmp/tmp10__uc4u
+Command line:  ccache cc /tmp/tmp10__uc4u/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp10__uc4u/output.obj 
+
+Code:
+ #include <unistd.h>
+                      #include <netinet/sctp.h>
+                      int main (int argc, char ** argv) {
+                          sctp_connectx(0, NULL, 0, NULL);
+                      }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "sctp_connectx() accepts 4 arguments" compiles: YES
+Configuring freeDiameter-host.h using configuration
+Configuring version.h using configuration
+Build targets in project: 17
+
+Subproject freeDiameter finished.
+Running compile:
+Working directory:  /tmp/tmp70et83fr
+Command line:  ccache cc /tmp/tmp70et83fr/testfile.c -O0 -Wno-missing-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp70et83fr/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpg7xkvplp
+Command line:  ccache cc /tmp/tmpg7xkvplp/testfile.c -O0 -Wno-missing-declarations -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpg7xkvplp/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp3lj3bcht
+Command line:  ccache cc /tmp/tmp3lj3bcht/testfile.c -O0 -Wno-discarded-qualifiers -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp3lj3bcht/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpm7w1nder
+Command line:  ccache cc /tmp/tmpm7w1nder/testfile.c -O0 -Wno-incompatible-pointer-types -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpm7w1nder/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpn9twtcvt
+Command line:  ccache cc /tmp/tmpn9twtcvt/testfile.c -O0 -Wno-strict-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpn9twtcvt/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-prototypes -Wno-missing-declarations -Wno-discarded-qualifiers -Wno-incompatible-pointer-types -Wno-strict-prototypes: YES
+Running compile:
+Working directory:  /tmp/tmppsi8nbdr
+Command line:  ccache cc /tmp/tmppsi8nbdr/testfile.c -O0 -w -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmppsi8nbdr/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmppvguh10s
+Command line:  ccache cc /tmp/tmppvguh10s/testfile.c -O0 -std=gnu99 -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmppvguh10s/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -w -std=gnu99: YES
+Running compile:
+Working directory:  /tmp/tmpxd5l8njb
+Command line:  ccache cc /tmp/tmpxd5l8njb/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip.h")
+          #error "Header 'netinet/ip.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip.h": YES
+Running compile:
+Working directory:  /tmp/tmpmjyaq_5b
+Command line:  ccache cc /tmp/tmpmjyaq_5b/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip6.h")
+          #error "Header 'netinet/ip6.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip6.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip6.h": YES
+Running compile:
+Working directory:  /tmp/tmp3t_bkgka
+Command line:  ccache cc /tmp/tmp3t_bkgka/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/udp.h")
+          #error "Header 'netinet/udp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/udp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/udp.h": YES
+Running compile:
+Working directory:  /tmp/tmpn2tmdb39
+Command line:  ccache cc /tmp/tmpn2tmdb39/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/tcp.h")
+          #error "Header 'netinet/tcp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/tcp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/tcp.h": YES
+Configuring pfcp-config.h using configuration
+Running compile:
+Working directory:  /tmp/tmp1ucdm1fy
+Command line:  ccache cc /tmp/tmp1ucdm1fy/testfile.c -O0 -Wno-strict-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp1ucdm1fy/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpwiw2stir
+Command line:  ccache cc /tmp/tmpwiw2stir/testfile.c -O0 -Wno-missing-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpwiw2stir/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp5b0qeqny
+Command line:  ccache cc /tmp/tmp5b0qeqny/testfile.c -O0 -Wno-missing-declarations -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp5b0qeqny/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpfgkx6opf
+Command line:  ccache cc /tmp/tmpfgkx6opf/testfile.c -O0 -Wno-unused-variable -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpfgkx6opf/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpovsug1d1
+Command line:  ccache cc /tmp/tmpovsug1d1/testfile.c -O0 -Wno-unused-label -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpovsug1d1/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpo1jxhzi6
+Command line:  ccache cc /tmp/tmpo1jxhzi6/testfile.c -O0 -Wno-float-equal -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpo1jxhzi6/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-strict-prototypes -Wno-missing-prototypes -Wno-missing-declarations -Wno-unused-variable -Wno-unused-label -Wno-float-equal: YES
+Running compile:
+Working directory:  /tmp/tmpa_vs6ssp
+Command line:  ccache cc /tmp/tmpa_vs6ssp/testfile.c -O0 -Wl,--start-group -lgnutls -Wl,--end-group -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpa_vs6ssp/output.exe 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library gnutls found: YES
+Determining dependency 'libnghttp2' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency libnghttp2 found: YES 1.30.0
+Determining dependency 'libmicrohttpd' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency libmicrohttpd found: YES 0.9.59
+Determining dependency 'libcurl' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency libcurl found: YES 7.58.0
+Running command: /usr/bin/git describe --abbrev=7 --dirty=+
+--- stdout----
+v2.4.5-39-ge5ff03b+
+
+----stderr----
+
+
+Configuring version.h using configuration
+Running compile:
+Working directory:  /tmp/tmp2dwkabjl
+Command line:  ccache cc /tmp/tmp2dwkabjl/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("ifaddrs.h")
+          #error "Header 'ifaddrs.h' could not be found"
+         #endif
+        #else
+         #include <ifaddrs.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "ifaddrs.h": YES
+Running compile:
+Working directory:  /tmp/tmp19m5i_1f
+Command line:  ccache cc /tmp/tmp19m5i_1f/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("net/ethernet.h")
+          #error "Header 'net/ethernet.h' could not be found"
+         #endif
+        #else
+         #include <net/ethernet.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "net/ethernet.h": YES
+Running compile:
+Working directory:  /tmp/tmp6a6e_dln
+Command line:  ccache cc /tmp/tmp6a6e_dln/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("net/if.h")
+          #error "Header 'net/if.h' could not be found"
+         #endif
+        #else
+         #include <net/if.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "net/if.h": YES
+Running compile:
+Working directory:  /tmp/tmpnt0n29_c
+Command line:  ccache cc /tmp/tmpnt0n29_c/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("net/if_dl.h")
+          #error "Header 'net/if_dl.h' could not be found"
+         #endif
+        #else
+         #include <net/if_dl.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpnt0n29_c/testfile.c:4:12: error: #error "Header 'net/if_dl.h' could not be found"
+           #error "Header 'net/if_dl.h' could not be found"
+            ^~~~~
+
+Has header "net/if_dl.h": NO
+Running compile:
+Working directory:  /tmp/tmpn8xcxs8a
+Command line:  ccache cc /tmp/tmpn8xcxs8a/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/in.h")
+          #error "Header 'netinet/in.h' could not be found"
+         #endif
+        #else
+         #include <netinet/in.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/in.h": YES
+Running compile:
+Working directory:  /tmp/tmpmj7fqmr0
+Command line:  ccache cc /tmp/tmpmj7fqmr0/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip.h")
+          #error "Header 'netinet/ip.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip.h": YES
+Running compile:
+Working directory:  /tmp/tmp6lvz5all
+Command line:  ccache cc /tmp/tmp6lvz5all/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip6.h")
+          #error "Header 'netinet/ip6.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip6.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip6.h": YES
+Running compile:
+Working directory:  /tmp/tmpm_pu7yj8
+Command line:  ccache cc /tmp/tmpm_pu7yj8/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip_icmp.h")
+          #error "Header 'netinet/ip_icmp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip_icmp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip_icmp.h": YES
+Running compile:
+Working directory:  /tmp/tmpxbv0rs3k
+Command line:  ccache cc /tmp/tmpxbv0rs3k/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/icmp6.h")
+          #error "Header 'netinet/icmp6.h' could not be found"
+         #endif
+        #else
+         #include <netinet/icmp6.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/icmp6.h": YES
+Running compile:
+Working directory:  /tmp/tmpa39_vm9a
+Command line:  ccache cc /tmp/tmpa39_vm9a/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/ioctl.h")
+          #error "Header 'sys/ioctl.h' could not be found"
+         #endif
+        #else
+         #include <sys/ioctl.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/ioctl.h": YES
+Running compile:
+Working directory:  /tmp/tmpdx8e58qi
+Command line:  ccache cc /tmp/tmpdx8e58qi/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/socket.h")
+          #error "Header 'sys/socket.h' could not be found"
+         #endif
+        #else
+         #include <sys/socket.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/socket.h": YES
+Configuring upf-config.h using configuration
+Determining dependency 'libtins' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency libtins found: YES 3.4
+Running compile:
+Working directory:  /tmp/tmp9yi0qkih
+Command line:  ccache cc /tmp/tmp9yi0qkih/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("net/if.h")
+          #error "Header 'net/if.h' could not be found"
+         #endif
+        #else
+         #include <net/if.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "net/if.h": YES
+Running compile:
+Working directory:  /tmp/tmp_f6_7d2b
+Command line:  ccache cc /tmp/tmp_f6_7d2b/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip.h")
+          #error "Header 'netinet/ip.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip.h": YES
+Running compile:
+Working directory:  /tmp/tmpubd1v10e
+Command line:  ccache cc /tmp/tmpubd1v10e/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip6.h")
+          #error "Header 'netinet/ip6.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip6.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip6.h": YES
+Running compile:
+Working directory:  /tmp/tmpd2pww3ll
+Command line:  ccache cc /tmp/tmpd2pww3ll/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/ip_icmp.h")
+          #error "Header 'netinet/ip_icmp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/ip_icmp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/ip_icmp.h": YES
+Running compile:
+Working directory:  /tmp/tmptrc4nveu
+Command line:  ccache cc /tmp/tmptrc4nveu/testfile.c -O0 -std=gnu89 -pipe -D_FILE_OFFSET_BITS=64 -E -P 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/icmp6.h")
+          #error "Header 'netinet/icmp6.h' could not be found"
+         #endif
+        #else
+         #include <netinet/icmp6.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/icmp6.h": YES
+Configuring smf-config.h using configuration
+Configuring open5gs-dbctl using configuration
+Running compile:
+Working directory:  /tmp/tmprof_ykob
+Command line:  ccache cc /tmp/tmprof_ykob/testfile.c -O0 -Wno-missing-prototypes -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmprof_ykob/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpi7t01km3
+Command line:  ccache cc /tmp/tmpi7t01km3/testfile.c -O0 -Wno-missing-declarations -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpi7t01km3/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmptkqn94kp
+Command line:  ccache cc /tmp/tmptkqn94kp/testfile.c -O0 -Wno-discarded-qualifiers -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmptkqn94kp/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpmw7zi_1b
+Command line:  ccache cc /tmp/tmpmw7zi_1b/testfile.c -O0 -Wno-incompatible-pointer-types -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpmw7zi_1b/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpm0xand9q
+Command line:  ccache cc /tmp/tmpm0xand9q/testfile.c -O0 -Wno-unused-variable -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpm0xand9q/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp_sury9c0
+Command line:  ccache cc /tmp/tmp_sury9c0/testfile.c -O0 -Wno-deprecated-declarations -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmp_sury9c0/output.obj 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-prototypes -Wno-missing-declarations -Wno-discarded-qualifiers -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-deprecated-declarations: YES
+Adding test "core".
+Adding test "crypt".
+Adding test "sctp".
+Adding test "unit".
+Configuring test-config-private.h using configuration
+Adding test "registration".
+Adding test "vonr".
+Adding test "slice".
+Adding test "attach".
+Adding test "volte".
+Adding test "csfb".
+Adding test "310014".
+Adding test "handover".
+Adding test "non3gpp".
+Message: 
+        prefix:                       /home/kevin/open5gs/install
+        libdir:                       /home/kevin/open5gs/install/lib/x86_64-linux-gnu
+        bindir:                       /home/kevin/open5gs/install/bin
+        sysconfdir:                   /home/kevin/open5gs/install/etc
+        localstatedir:                /home/kevin/open5gs/install/var
+        source code location:         /home/kevin/open5gs
+        compiler:                     gcc
+        debugging support:            debug
+
+Build targets in project: 90
+Found ninja-1.8.2 at /usr/bin/ninja

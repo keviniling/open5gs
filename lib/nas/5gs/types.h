@@ -213,21 +213,37 @@ typedef struct ogs_nas_5gs_mobile_identity_s {
     void *buffer;
 } ogs_nas_5gs_mobile_identity_t;
 
+//kai: add cp ciot optimization
 /* 9.11.3.5 5GS network feature support
  * M LV 2 */
 typedef struct ogs_nas_5gs_network_feature_support_s {
     uint8_t length;
-ED6(uint8_t mpsi:1;,
+    ED6(uint8_t mpsi:1;,
     uint8_t iwk_n26:1;,
     uint8_t emf:2;,
     uint8_t msc:2;,
     uint8_t ims_vops_n3gpp:1;,
     uint8_t ims_vops_3gpp:1;)
-ED3(uint8_t spare:6;,
+    ED5(uint8_t spare:3;,
+    uint8_t nas_5g_iphc_cp_ciot:1;,
+    uint8_t retrictec:2;,
     uint8_t mcsi:1;,
     uint8_t emcn :1;)
     uint8_t spare2;
 } ogs_nas_5gs_network_feature_support_t;
+//typedef struct ogs_nas_5gs_network_feature_support_s {
+//    uint8_t length;
+//ED6(uint8_t mpsi:1;,
+//    uint8_t iwk_n26:1;,
+//    uint8_t emf:2;,
+//    uint8_t msc:2;,
+//    uint8_t ims_vops_n3gpp:1;,
+//    uint8_t ims_vops_3gpp:1;)
+//ED3(uint8_t spare:6;,
+//    uint8_t mcsi:1;,
+//    uint8_t emcn :1;)
+//    uint8_t spare2;
+//} ogs_nas_5gs_network_feature_support_t;
 
 /* 9.11.3.6 5GS registration result
  * O TLV 3-5 */

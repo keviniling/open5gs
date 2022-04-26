@@ -963,6 +963,15 @@ typedef struct ogs_nas_extended_quality_of_service_s {
     } gbr;
 } __attribute__ ((packed)) ogs_nas_extended_quality_of_service_t;
 
+
+/* 9.11.3.9A 5GS update type */
+# define OGS_NAS_EPS_PNB_CIOT_NO_ADDITIONAL_INFORMATION 0
+# define OGS_NAS_EPS_PNB_CIOT_CP_CIOT_5GS_OPTIMIZATION 1
+# define OGS_NAS_EPS_PNB_CIOT_UP_CIOT_5GS_OPTIMIZATION 2
+# define OGS_NAS_5GS_PNB_CIOT_NO_ADDITIONAL_INFORMATION 0
+# define OGS_NAS_5GS_PNB_CIOT_CP_CIOT_5GS_OPTIMIZATION 1
+# define OGS_NAS_5GS_PNB_CIOT_UP_CIOT_5GS_OPTIMIZATION 2
+
 #ifdef __cplusplus
 }
 #endif

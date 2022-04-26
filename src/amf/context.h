@@ -291,11 +291,12 @@ struct amf_ue_s {
     OGS_STRING_DUP((__aMF)->policy_association_id, __iD);
     char *policy_association_id;
 
-    /* 5GMM Capability */
+    /* 5GMM Capability */ //Kai: add gmm capability
     struct {
         bool lte_positioning_protocol_capability;
         bool ho_attach;
         bool s1_mode;
+        bool cp_ciot_5gs_optimization;
     } gmm_capability;
 
 #define SECURITY_CONTEXT_IS_VALID(__aMF) \
@@ -410,6 +411,10 @@ struct amf_ue_s {
     } handover;
 
     ogs_list_t      sess_list;
+
+    /* Kai: 5gs update type */
+    ogs_nas_5gs_update_type_t nas_5gs_update_type;
+
 };
 
 typedef struct amf_sess_s {
